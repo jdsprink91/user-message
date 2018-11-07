@@ -7,7 +7,6 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-    entry: './src/index.js',
     module: {
         rules: [
             {
@@ -18,11 +17,6 @@ module.exports = {
                 }
             }
         ]
-    },
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/'
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
